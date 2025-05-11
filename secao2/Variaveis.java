@@ -1,5 +1,7 @@
 package secao2;
 
+import org.w3c.dom.TypeInfo;
+
 public class Variaveis {
 
     public static void main(String[] args) {
@@ -51,9 +53,37 @@ public class Variaveis {
         double numQuebrado2 = 9.94;
         int num2 = (int) numQuebrado2; // aredonda para baixo, ou seja 9
 
+        // curiosidade: 
+        // da para puxar o valor ASKII de uma letra tranformando de "char" para "int"
+        
+        char letra = 'A';
+        int askiiDeLetra = (int) letra; 
+
+        System.out.println(askiiDeLetra); // vai imprimir 65, que é o valor ASKII da letra A 
 
 
 
+        /* CONSTANTES */
+
+        final int DIAS_DA_SEMANA = 7;
+        //inicia com "final" antes do tipo
+        //boa pratica: LETRA_MAIUSCULA_SEPARADA_POR_UNDERLINE para o nome
+        
+
+        // System.out.println(DIAS_DA_SEMANA);
+
+
+        /* TIPO VAR */  
+        // tipo n definido até receber valor
+        // uma vez definido n pode ser alterado
+
+        var valor = 5;
+        //valor passa a ser int 
+
+        // valor = "asd";
+        //da erro pois n pode ser redeclarado
+
+        valor += 10;
     }
 
 }
