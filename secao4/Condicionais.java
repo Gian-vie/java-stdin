@@ -59,8 +59,8 @@ public class Condicionais {
             case 7:
                 System.err.println("sabado");
                 break;
-
             default:
+                System.err.println("numero inválido");
                 break;
         }
     }
